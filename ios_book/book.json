@@ -1,0 +1,12 @@
+{
+    "root": "./",
+    "title": "IOS开发学习",
+    "description": "IOS开发学习",
+    "author": "thebulelife@163.com",
+    "plugins": ["-search", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small"],
+    "pluginsConfig": {
+        "sectionx": {
+            "tag": "b"
+        }
+    }
+}
