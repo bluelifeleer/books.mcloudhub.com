@@ -1,0 +1,665 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python发送邮件的能力 · Android开发学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="thebulelife@163.com">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../commonly/libraries.html" />
+    
+    
+    <link rel="prev" href="../help/readme.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Python基础学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lang/RADME.html">
+            
+                <a href="../lang/RADME.html">
+            
+                    
+                    Python语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../lang/built_in_Functions/">
+            
+                <a href="../lang/built_in_Functions/">
+            
+                    
+                    内置函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../lang/variable/readme.html">
+            
+                <a href="../lang/variable/readme.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../string/readme.html">
+            
+                <a href="../string/readme.html">
+            
+                    
+                    Python字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../operator/readme.html">
+            
+                <a href="../operator/readme.html">
+            
+                    
+                    Python算术运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../data_structure/list.html">
+            
+                <a href="../data_structure/list.html">
+            
+                    
+                    Python列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../data_structure/dic.html">
+            
+                <a href="../data_structure/dic.html">
+            
+                    
+                    Python字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../data_structure/tuples.html">
+            
+                <a href="../data_structure/tuples.html">
+            
+                    
+                    Python元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../loop/loop.html">
+            
+                <a href="../loop/loop.html">
+            
+                    
+                    Python循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../condition/condition.html">
+            
+                <a href="../condition/condition.html">
+            
+                    
+                    Python条件表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../reg/reg.html">
+            
+                <a href="../reg/reg.html">
+            
+                    
+                    Python正则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../func/func.html">
+            
+                <a href="../func/func.html">
+            
+                    
+                    Python函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../class/class.html">
+            
+                <a href="../class/class.html">
+            
+                    
+                    Python类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../socket/readme.html">
+            
+                <a href="../socket/readme.html">
+            
+                    
+                    Python socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../exceptions/readme.html">
+            
+                <a href="../exceptions/readme.html">
+            
+                    
+                    Python 异常类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../thread/readme.html">
+            
+                <a href="../thread/readme.html">
+            
+                    
+                    Python线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../help/readme.html">
+            
+                <a href="../help/readme.html">
+            
+                    
+                    Python获取帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    python发送邮件的能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../commonly/libraries.html">
+            
+                <a href="../commonly/libraries.html">
+            
+                    
+                    Python常用库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.19.1" data-path="../lib/urllib.html">
+            
+                <a href="../lib/urllib.html">
+            
+                    
+                    urllib
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.2" data-path="../lib/requests.html">
+            
+                <a href="../lib/requests.html">
+            
+                    
+                    requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.3" data-path="../lib/mysql-python.html">
+            
+                <a href="../lib/mysql-python.html">
+            
+                    
+                    mysql-python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19.4" data-path="../lib/pymysql.html">
+            
+                <a href="../lib/pymysql.html">
+            
+                    
+                    pymysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >python发送邮件的能力</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="python&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x7684;&#x80FD;&#x529B;">Python&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x7684;&#x80FD;&#x529B;</h3>
+<blockquote>
+<p>&#x5728;Python&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x9700;&#x8981;&#x7528;&#x5230;<code>smtplib</code>&#x548C;<code>email</code>&#x4E24;&#x4E2A;&#x5E93;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5E93;&#x90FD;&#x662F;Python&#x81EA;&#x5E26;&#x7684;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5BFC;&#x5165;&#x5E93;">&#x5BFC;&#x5165;&#x5E93;</h4>
+<pre><code>import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
+</code></pre><h4 id="&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;smtp&#x5B9E;&#x4F8B;">&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;SMTP&#x5B9E;&#x4F8B;</h4>
+<pre><code>stmpObj = smtplib.STMP()
+</code></pre><h4 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h4>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x53C2;&#x6570;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connect(host=&apos;localhost&apos;, port=0)</td>
+<td>&#x8FDE;&#x63A5;&#x5230;&#x7ED9;&#x5B9A;&#x7AEF;&#x53E3;&#x4E0A;&#x7684;&#x4E3B;&#x673A;&#x3002;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x662F;&#x8FDE;&#x63A5;&#x5230;&#x6807;&#x51C6;SMTP&#x7AEF;&#x53E3;(25)&#x7684;&#x672C;&#x5730;&#x4E3B;&#x673A;&#x3002;&#x5982;&#x679C;&#x4E3B;&#x673A;&#x540D;&#x4EE5;&#x5192;&#x53F7;(&apos;:&apos;)&#x7ED3;&#x5C3E;&#xFF0C;&#x540E;&#x9762;&#x8DDF;&#x7740;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x540E;&#x7F00;&#x5C06;&#x88AB;&#x53BB;&#x6389;&#xFF0C;&#x8BE5;&#x6570;&#x5B57;&#x5C06;&#x88AB;&#x89E3;&#x91CA;&#x4E3A;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#x3002;&#x5982;&#x679C;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x8FC7;&#x7A0B;&#x4E2D;&#x6307;&#x5B9A;&#x4E86;&#x4E3B;&#x673A;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5C06;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;&#x8FD4;&#x56DE;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8FDE;&#x63A5;&#x54CD;&#x5E94;&#x4E2D;&#x53D1;&#x9001;&#x7684;&#x54CD;&#x5E94;&#x4EE3;&#x7801;&#x548C;&#x6D88;&#x606F;&#x7684;&#x4E8C;&#x5143;&#x7EC4;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>login(user, password, *, initial_response_ok=True)</td>
+<td>&#x767B;&#x5F55;&#x9700;&#x8981;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;SMTP&#x670D;&#x52A1;&#x5668;&#x3002;&#x53C2;&#x6570;&#x662F;&#x8981;&#x8FDB;&#x884C;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x3002;&#x5982;&#x679C;&#x6B64;&#x4F1A;&#x8BDD;&#x4E2D;&#x6CA1;&#x6709;&#x5148;&#x524D;&#x7684;EHLO&#x6216;HELO&#x547D;&#x4EE4;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x5C06;&#x9996;&#x5148;&#x5C1D;&#x8BD5;ESMTP EHLO&#x3002;&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x5C06;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#xFF0C;&#x6216;&#x8005;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x4EE5;&#x4E0B;&#x5F02;&#x5E38;: SMTPHeloError&#xFF0C;SMTPAuthenticationError&#xFF0C;SMTPNotSupportedError&#xFF0C;SMTPException&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>sendmaile(from_addr, to_addrs, msg, mail_options=(), rcpt_options=())</td>
+<td>&#x53D1;&#x9001;&#x90AE;&#x4EF6;&#x3002;&#x6240;&#x9700;&#x7684;&#x53C2;&#x6570;&#x662F;RFC 822 from-address&#x5B57;&#x7B26;&#x4E32;&#x3001;RFC 822 to-address&#x5B57;&#x7B26;&#x4E32;&#x5217;&#x8868;(&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x88AB;&#x89C6;&#x4E3A;&#x5177;&#x6709;1&#x4E2A;&#x5730;&#x5740;&#x7684;&#x5217;&#x8868;)&#x548C;&#x6D88;&#x606F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x8C03;&#x7528;&#x8005;&#x53EF;&#x4EE5;&#x5C06;&#x90AE;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x7684;ESMTP&#x9009;&#x9879;(&#x5982;8bitmime)&#x5217;&#x8868;&#x4F5C;&#x4E3A;mail_options&#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#x3002;&#x5E94;&#x8BE5;&#x4E0E;&#x6240;&#x6709;RCPT&#x547D;&#x4EE4;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x7684;ESMTP&#x9009;&#x9879;(&#x5982;DSN&#x547D;&#x4EE4;)&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;rcpt_options&#x4F20;&#x9012;&#x3002;(&#x5982;&#x679C;&#x9700;&#x8981;&#x5BF9;&#x4E0D;&#x540C;&#x7684;&#x6536;&#x4EF6;&#x4EBA;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;ESMTP&#x9009;&#x9879;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x4F4E;&#x7EA7;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;mail()&#x3001;rcpt()&#x548C;data()&#x6765;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x3002;)</td>
+<td></td>
+</tr>
+<tr>
+<td>set_debuglevel()</td>
+<td>&#x8BBE;&#x7F6E;&#x8C03;&#x8BD5;&#x8F93;&#x51FA;&#x7EA7;&#x522B;&#x3002;&#x7EA7;&#x522B;&#x7684;&#x503C;&#x4E3A;1&#x6216;True&#x5C06;&#x5BFC;&#x81F4;&#x8FDE;&#x63A5;&#x7684;&#x8C03;&#x8BD5;&#x6D88;&#x606F;&#x4EE5;&#x53CA;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x63A5;&#x6536;&#x7684;&#x6240;&#x6709;&#x6D88;&#x606F;&#x3002;&#x7EA7;&#x522B;&#x503C;&#x4E3A;2&#x4F1A;&#x5BFC;&#x81F4;&#x8FD9;&#x4E9B;&#x6D88;&#x606F;&#x88AB;&#x52A0;&#x76D6;&#x65F6;&#x95F4;&#x6233;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>docomd()</td>
+<td>&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;cmd&#x3002;&#x53EF;&#x9009;&#x53C2;&#x6570;args&#x7B80;&#x5355;&#x5730;&#x8FDE;&#x63A5;&#x5230;&#x547D;&#x4EE4;&#xFF0C;&#x7528;&#x7A7A;&#x683C;&#x9694;&#x5F00;&#x3002;&#x8FD9;&#x5C06;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7531;&#x6570;&#x5B57;&#x54CD;&#x5E94;&#x4EE3;&#x7801;&#x548C;&#x5B9E;&#x9645;&#x54CD;&#x5E94;&#x884C;&#x7EC4;&#x6210;&#x7684;&#x4E8C;&#x5143;&#x7EC4;(&#x591A;&#x884C;&#x54CD;&#x5E94;&#x88AB;&#x8FDE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x957F;&#x884C;&#x4E2D;)&#x3002;&#x5728;&#x6B63;&#x5E38;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF0C;&#x5BF9;&#x4E8E;&#x6D4B;&#x8BD5;&#x79C1;&#x6709;&#x6269;&#x5C55;&#x53EF;&#x80FD;&#x6709;&#x7528;&#x3002;&#x5982;&#x679C;&#x5728;&#x7B49;&#x5F85;&#x5E94;&#x7B54;&#x65F6;&#x4E22;&#x5931;&#x4E86;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x90A3;&#x4E48;SMTPServerDisconnected&#x5C06;&#x4F1A;&#x88AB;&#x5524;&#x9192;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>helo(name=&apos;&apos;)</td>
+<td>&#x4F7F;&#x7528;HELO&#x5411;SMTP&#x670D;&#x52A1;&#x5668;&#x6807;&#x8BC6;&#x81EA;&#x5DF1;&#x3002;hostname&#x53C2;&#x6570;&#x9ED8;&#x8BA4;&#x4E3A;&#x672C;&#x5730;&#x4E3B;&#x673A;&#x7684;&#x5B8C;&#x5168;&#x9650;&#x5B9A;&#x57DF;&#x540D;&#x3002;&#x670D;&#x52A1;&#x5668;&#x8FD4;&#x56DE;&#x7684;&#x6D88;&#x606F;&#x5B58;&#x50A8;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;helo_resp&#x5C5E;&#x6027;&#x3002;&#x5728;&#x6B63;&#x5E38;&#x64CD;&#x4F5C;&#x4E2D;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x663E;&#x5F0F;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x3002;&#x5FC5;&#x8981;&#x65F6;&#xFF0C;sendmail()&#x4F1A;&#x9690;&#x5F0F;&#x8C03;&#x7528;&#x5B83;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>verify(address)</td>
+<td>&#x4F7F;&#x7528;SMTP VRFY&#x68C0;&#x67E5;&#x6B64;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5730;&#x5740;&#x7684;&#x6709;&#x6548;&#x6027;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x5730;&#x5740;&#x6709;&#x6548;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5143;&#x7EC4;&#xFF0C;&#x8BE5;&#x5143;&#x7EC4;&#x7531;&#x4EE3;&#x7801;250&#x548C;&#x5B8C;&#x6574;&#x7684;RFC 822&#x5730;&#x5740;(&#x5305;&#x62EC;&#x4EBA;&#x540D;)&#x7EC4;&#x6210;&#x3002;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;SMTP&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x4E3A;400&#x6216;&#x66F4;&#x5927;&#x7684;&#x9519;&#x8BEF;&#x5B57;&#x7B26;&#x4E32;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>send_message(msg, from_addr=None, to_addrs=None, mail_options=(), rcpt_options=())</td>
+<td>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8C03;&#x7528;sendmail()&#x7684;&#x65B9;&#x4FBF;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x6D88;&#x606F;&#x7531;email.message&#x8868;&#x793A;&#x3002;&#x6D88;&#x606F;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#x4E0E;sendmail()&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x662F;msg&#x662F;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x5BF9;&#x8C61;&#x3002;</td>
+<td></td>
+</tr>
+<tr>
+<td>quit()</td>
+<td>&#x7EC8;&#x6B62;SMTP&#x4F1A;&#x8BDD;&#x5E76;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;&#x8FD4;&#x56DE;SMTP&#x9000;&#x51FA;&#x547D;&#x4EE4;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FD8;&#x652F;&#x6301;&#x6807;&#x51C6;SMTP/ESMTP&#x547D;&#x4EE4;&#x5BF9;&#x5E94;&#x7684;&#x4F4E;&#x7EA7;&#x65B9;&#x6CD5;HELP&#x3001;RSET&#x3001;NOOP&#x3001;&#x90AE;&#x4EF6;&#x3001;RCPT&#x548C;&#x6570;&#x636E;&#x3002;&#x901A;&#x5E38;&#x4E0D;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x5B83;&#x4EEC;&#xFF0C;</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h4>
+<pre><code>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
+
+sender = &apos;703294267@qq.com&apos;    # &#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x8005;
+receivers = [&apos;thebulelife@163.com&apos;] # &#x90AE;&#x4EF6;&#x63A5;&#x6536;&#x8005;&#xFF0C;&#x5217;&#x8868;
+mail_host = &apos;smtp.qq.com&apos;    # &#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x4EE3;&#x7406;&#x4E3B;&#x673A;
+mail_user = &apos;703294267@qq.com&apos; # &#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x8005;&#x767B;&#x5F55;&#x5E10;&#x53F7;
+mail_passwd = &apos;umipelffvxzebfca&apos;    # QQ&#x90AE;&#x7BB1;&#x5F00;&#x901A;SMTP&#x65F6;&#x7684;16&#x4F4D;&#x6388;&#x6743;&#x7801;&#xFF0C;&#x975E;&#x767B;&#x5F55;&#x5BC6;&#x7801;
+
+message = MIMEText(&apos;Python &#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x6D4B;&#x8BD5;...&apos;, &apos;plain&apos;, &apos;utf-8&apos;)
+message[&apos;From&apos;] = Header(&apos;bluelife&apos; ,&apos;utf-8&apos;)
+message[&apos;To&apos;] = Header(&apos;test&apos;, &apos;utf-8&apos;)
+
+subject = &apos;Python STMP test .&apos;;
+message[&apos;Subject&apos;] = Header(subject, &apos;utf-8&apos;)
+
+try :
+    smtpObj = smtplib.SMTP()
+    smtpObj.set_debuglevel(1)
+    smtpObj.connect(mail_host, 25)
+    smtpObj.login(mail_user, mail_passwd)
+    smtpObj.sendmail(sender, receivers, message.as_string())
+    print(&apos;Success: &#x90AE;&#x4EF6;&#x53D1;&#x9001;&#x6210;&#x529F;&apos;)
+except smtplib.SMTPException :
+    print(&apos;Error: &#x65E0;&#x6CD5;&#x53D1;&#x9001;&#x90AE;&#x4EF6;&apos;)
+</code></pre><h4 id="&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;httpsdocspythonorg3librarysmtplibhtml"><a href="https://docs.python.org/3/library/smtplib.html" title="https://docs.python.org/3/library/smtplib.html" target="_blank">&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;https://docs.python.org/3/library/smtplib.html</a></h4>
+<h4 id="&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;httpsdocspythonorg3libraryemailexampleshtml"><a href="https://docs.python.org/3/library/email.examples.html" title="https://docs.python.org/3/library/email.examples.html" target="_blank">&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;https://docs.python.org/3/library/email.examples.html</a></h4>
+<h4 id="&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;httpsdocspythonorg35libraryemailhtml"><a href="https://docs.python.org/3.5/library/email.html" title="https://docs.python.org/3.5/library/email.html" target="_blank">&#x53C2;&#x8003;&#x8FDE;&#x63A5;&#xFF1A;https://docs.python.org/3.5/library/email.html</a></h4>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../help/readme.html" class="navigation navigation-prev " aria-label="Previous page: Python获取帮助">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../commonly/libraries.html" class="navigation navigation-next " aria-label="Next page: Python常用库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python发送邮件的能力","level":"1.18","depth":1,"next":{"title":"Python常用库","level":"1.19","depth":1,"path":"python/commonly/libraries.md","ref":"python/commonly/libraries.md","articles":[{"title":"urllib","level":"1.19.1","depth":2,"path":"python/lib/urllib.md","ref":"python/lib/urllib.md","articles":[]},{"title":"requests","level":"1.19.2","depth":2,"path":"python/lib/requests.md","ref":"python/lib/requests.md","articles":[]},{"title":"mysql-python","level":"1.19.3","depth":2,"path":"python/lib/mysql-python.md","ref":"python/lib/mysql-python.md","articles":[]},{"title":"pymysql","level":"1.19.4","depth":2,"path":"python/lib/pymysql.md","ref":"python/lib/pymysql.md","articles":[]}]},"previous":{"title":"Python获取帮助","level":"1.17","depth":1,"path":"python/help/readme.md","ref":"python/help/readme.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","splitter","image-captions","toggle-chapters","sectionx","expandable-chapters-small"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"thebulelife@163.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"python/lang/built_in_Functions/index.html#fig1.3.1.1","level":"1.3.1","list_caption":"Figure: ../../static/python_print.png","alt":"../../static/python_print.png","nro":1,"url":"../../static/python_print.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../static/python_print.png","attributes":{},"skip":false,"key":"1.3.1.1"},{"backlink":"python/help/index.html#fig1.17.1","level":"1.17","list_caption":"Figure: ../static/python_help.png","alt":"../static/python_help.png","nro":2,"url":"../static/python_help.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../static/python_help.png","attributes":{},"skip":false,"key":"1.17.1"},{"backlink":"python/help/index.html#fig1.17.2","level":"1.17","list_caption":"Figure: ../static/python_help_os.png","alt":"../static/python_help_os.png","nro":3,"url":"../static/python_help_os.png","index":2,"caption_template":"Figure: _CAPTION_","label":"../static/python_help_os.png","attributes":{},"skip":false,"key":"1.17.2"}]},"title":"Android开发学习","gitbook":"*","description":"Android开发学习"},"file":{"path":"python/mail/readme.md","mtime":"2018-11-06T17:55:53.014Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-06T17:58:10.416Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
