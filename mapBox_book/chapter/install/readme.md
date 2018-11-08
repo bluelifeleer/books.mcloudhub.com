@@ -78,3 +78,5 @@ if(!mapboxgl.supported()){
 * map.addControl()  // 添加控件
 * map.addLayer()    // 添加地图层
 * map.on()          // 地图添加事件，会在地图事件中详细介绍
+
+#### 可以看出在初始化时指定必要的参数```container```，```style```，```center```，```zoom```就可以很方便的创建一个MapBox的地图出来，当然参数也不止这几个，关于new mapboxgl.Map初始化参数会在后面做详细讲解。
