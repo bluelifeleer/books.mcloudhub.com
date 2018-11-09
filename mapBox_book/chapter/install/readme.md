@@ -70,7 +70,7 @@ if(!mapboxgl.supported()){
 安装完成预览效果：
 ![../../images/mapbox_view.png](../../images/mapbox_view.png)
 
-###### 至此安装完成，可以看到实例化一个地图资源指向```map```，以后所有的地呼操作都在这个```map```下操作。如：
+###### 至此安装完成，可以看到实例化一个地图资源指向```map```，以后所有的地图操作都在这个```map```下操作。如：
 * map.setCenter()   // 设置地图中心
 * map.setZoom()     // 设置地图缩放级别
 * map.getCenter()   // 获取地图中心
@@ -79,4 +79,4 @@ if(!mapboxgl.supported()){
 * map.addLayer()    // 添加地图层
 * map.on()          // 地图添加事件，会在地图事件中详细介绍
 
-#### 可以看出在初始化时指定必要的参数```container```，```style```，```center```，```zoom```就可以很方便的创建一个MapBox的地图出来，当然参数也不止这几个，关于new mapboxgl.Map初始化参数会在后面做详细讲解。
+#### 可以看出在初始化时指定必要的参数```container```，```style```，```center```，```zoom```就可以很方便的创建一个MapBox的地图出来，当然参数也不止这几个，关于new mapboxgl.Map初始化参数会在后面做详细[讲解](/map/option.md '/map/option.md')。

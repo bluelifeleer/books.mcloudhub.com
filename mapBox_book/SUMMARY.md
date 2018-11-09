@@ -1,6 +1,16 @@
 # Summary
 
-* [MapBox简介](README.md)
-* [MapBox安装](chapter/install/readme.md)
-* [map对象](chapter/map/readme.md)
-
+* [MapBox 简介](README.md)
+* [install](chapter/install/readme.md)
+	* [option](chapter/map/option.md)
+* [map](chapter/map/map.md)
+	* [ addControl](chapter/map/add_control.md)
+* [Geography & Geometry](chapter/geography_eometry/readme.md)
+* [plugins](chapter/plugins/readme.md)
+	* [User Interface Plugins(用户界面插件)](chapter/plugins/user_interface/readme.md)
+	* [Map Rendering Plugins(地图渲染插件)](chapter/plugins/map_rendering/readme.md)
+		* [mapbox-gl-language](chapter/plugins/map_rendering/language/readme.md)
+		* [mapbox-gl-rtl-text](chapter/plugins/map_rendering/rtl_text/readme.md)
+		* [mapbox-gl-traffic](chapter/plugins/map_rendering/traffic/readme.md)
+		* [deck.gl](chapter/plugins/map_rendering/deck/readme.md)
+	* [Framework Integrations(框架的集成)](chapter/plugins/framework_integrations/readme.md)
