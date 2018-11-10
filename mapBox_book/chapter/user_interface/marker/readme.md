@@ -137,3 +137,19 @@ geojson.features.forEach(function(marker) {
 });
 ```
 
+
+### 点击地图时添加一个锚点
+
+```
+map.on('load', function(){
+    map.on('click', function(e){
+        var marker = new mapboxgl.Marker()
+        .setLngLat(e.lngLat)
+        .addTo(map);
+    })
+})
+```
+
+### 效果
+
+![../../../images/mapbox_marker.png](../../../images/mapbox_marker.png)

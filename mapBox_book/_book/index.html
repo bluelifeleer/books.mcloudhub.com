@@ -1,10 +1,10 @@
 
 <!DOCTYPE HTML>
-<html lang="" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>MapBox 简介 · Android开发学习</title>
+        <title>MapBox 简介 · MapBox开发学习</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
@@ -41,6 +45,22 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -48,6 +68,10 @@
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
         
 
     
@@ -67,6 +91,7 @@
     
 
         
+    
     
     
     <meta name="HandheldFriendly" content="true"/>
@@ -81,6 +106,17 @@
     
     
 
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book","types":["star","watch","fork"],"size":"small"};
+    </script>
+
     </head>
     <body>
         
@@ -88,6 +124,10 @@
     <div class="book-summary">
         
             
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
             
                 <nav role="navigation">
                 
@@ -236,6 +276,64 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter/geography_eometry/lngLat/readme.html">
+            
+                <a href="chapter/geography_eometry/lngLat/readme.html">
+            
+                    
+                    LngLat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="chapter/geography_eometry/lngLatLike/readme.html">
+            
+                <a href="chapter/geography_eometry/lngLatLike/readme.html">
+            
+                    
+                    LngLatLike
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="chapter/geography_eometry/lngLatBounds/readme.html">
+            
+                <a href="chapter/geography_eometry/lngLatBounds/readme.html">
+            
+                    
+                    LngLatBounds
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="chapter/geography_eometry/lngLatBoundsLike/readme.html">
+            
+                <a href="chapter/geography_eometry/lngLatBoundsLike/readme.html">
+            
+                    
+                    LngLatBoundsLike
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
         <li class="chapter " data-level="1.6" data-path="chapter/plugins/readme.html">
@@ -354,6 +452,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.7" data-path="chapter/changelog.html">
+            
+                <a href="chapter/changelog.html">
+            
+                    
+                    change logs
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
 
@@ -361,7 +472,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            Published with GitBook
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -394,36 +505,84 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
+<div id="book-search-results">
+    <div class="search-noresults">
+    
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="mapbox&#x7B80;&#x4ECB;">MapBox&#x7B80;&#x4ECB;</h3>
+                                <h3 id="mapbox&#x7B80;&#x4ECB;"><a name="mapbox&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#mapbox&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>MapBox&#x7B80;&#x4ECB;</h3>
 <p><a href="https://www.mapbox.com/" title="https://www.mapbox.com/" target="_blank">&#x7F51;&#x7AD9;&#x8FDE;&#x63A5;&#xFF1A;https://www.mapbox.com/</a></p>
-<h3 id="&#x4E2A;&#x4EBA;&#x5BF9;mapbox&#x7684;&#x7406;&#x89E3;">&#x4E2A;&#x4EBA;&#x5BF9;MapBox&#x7684;&#x7406;&#x89E3;</h3>
-<h4 id="mapbox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;json&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;">MapBox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;JSON&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;</h4>
-
+<h3 id="&#x4E2A;&#x4EBA;&#x5BF9;mapbox&#x7684;&#x7406;&#x89E3;"><a name="&#x4E2A;&#x4EBA;&#x5BF9;mapbox&#x7684;&#x7406;&#x89E3;" class="anchor-navigation-ex-anchor" href="#&#x4E2A;&#x4EBA;&#x5BF9;mapbox&#x7684;&#x7406;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E2A;&#x4EBA;&#x5BF9;MapBox&#x7684;&#x7406;&#x89E3;</h3>
+<h4 id="mapbox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;json&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;"><a name="mapbox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;json&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;" class="anchor-navigation-ex-anchor" href="#mapbox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;json&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>MapBox&#x5C31;&#x50CF;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5730;&#x57FA;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x81EA;&#x5DF1;&#x7684;&#x8BBE;&#x60F3;&#x6765;&#x521B;&#x5EFA;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#xFF0C;&#x4E16;&#x754C;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x5730;&#x57FA;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x6837;&#x5F0F;&#x6570;&#x636E;&#x8DDF;&#x52A0;&#x5165;&#x7684;&#x672C;&#x5730;JSON&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x77E2;&#x91CF;&#x5207;&#x7247;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x7406;&#x60F3;&#x7684;&#x623F;&#x5B50;&#x3002;</h4>
+<h3 id="&#x5730;&#x56FE;&#x7684;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x5B57;"><a name="&#x5730;&#x56FE;&#x7684;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x5B57;" class="anchor-navigation-ex-anchor" href="#&#x5730;&#x56FE;&#x7684;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x5B57;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5730;&#x56FE;&#x7684;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x5B57;</h3>
+<ul>
+<li><h5 id="feature-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7684;&#x5C55;&#x73B0;&#x3002;"><a name="feature-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7684;&#x5C55;&#x73B0;&#x3002;" class="anchor-navigation-ex-anchor" href="#feature-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7684;&#x5C55;&#x73B0;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>feature &#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7684;&#x5C55;&#x73B0;&#x3002;</h5>
+</li>
+<li><h5 id="layer-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x5C42;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x7528;&#x8FC7;photoshop&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6548;&#x679C;&#x56FE;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x5C42;&#x5C42;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x3002;"><a name="layer-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x5C42;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x7528;&#x8FC7;photoshop&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6548;&#x679C;&#x56FE;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x5C42;&#x5C42;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x3002;" class="anchor-navigation-ex-anchor" href="#layer-&#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x5C42;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x7528;&#x8FC7;photoshop&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6548;&#x679C;&#x56FE;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x5C42;&#x5C42;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>layer &#x5730;&#x56FE;&#x4E0A;&#x6240;&#x6709;&#x80FD;&#x770B;&#x5230;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x7EC4;&#x4E00;&#x7EC4;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x5C42;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x7528;&#x8FC7;photoshop&#x7684;&#x4EBA;&#x90FD;&#x77E5;&#x9053;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x6548;&#x679C;&#x56FE;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x5C42;&#x5C42;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7EC4;&#x6210;&#x53E0;&#x52A0;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x3002;</h5>
+</li>
+<li><h5 id="vector-tile-&#x6574;&#x4E2A;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x628A;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x79F0;&#x4F5C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x6805;&#x683C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x6805;&#x683C;&#x74E6;&#x7247;&#x653E;&#x5927;&#x3001;&#x7F29;&#x5C0F;&#x4F1A;&#x53D8;&#x5F62;&#x5931;&#x771F;&#xFF0C;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#x53EF;&#x4EE5;&#x65E0;&#x9650;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x800C;&#x4E0D;&#x5931;&#x771F;&#x3002;&#x6709;&#x4ED4;&#x7EC6;&#x770B;&#x8FC7;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x7684;&#x4EBA;&#x5C31;&#x77E5;&#x9053;&#x5728;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x62D6;&#x52A8;&#x5730;&#x56FE;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x770B;&#x5230;&#x4E0D;&#x505C;&#x5730;&#x5728;&#x6539;&#x5584;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD4;&#x56DE;&#x5728;&#x5C31;&#x662F;&#x4E00;&#x5F20;&#x5F20;png&#x7684;&#x56FE;&#x7247;&#x3002;"><a name="vector-tile-&#x6574;&#x4E2A;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x628A;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x79F0;&#x4F5C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x6805;&#x683C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x6805;&#x683C;&#x74E6;&#x7247;&#x653E;&#x5927;&#x3001;&#x7F29;&#x5C0F;&#x4F1A;&#x53D8;&#x5F62;&#x5931;&#x771F;&#xFF0C;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#x53EF;&#x4EE5;&#x65E0;&#x9650;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x800C;&#x4E0D;&#x5931;&#x771F;&#x3002;&#x6709;&#x4ED4;&#x7EC6;&#x770B;&#x8FC7;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x7684;&#x4EBA;&#x5C31;&#x77E5;&#x9053;&#x5728;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x62D6;&#x52A8;&#x5730;&#x56FE;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x770B;&#x5230;&#x4E0D;&#x505C;&#x5730;&#x5728;&#x6539;&#x5584;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD4;&#x56DE;&#x5728;&#x5C31;&#x662F;&#x4E00;&#x5F20;&#x5F20;png&#x7684;&#x56FE;&#x7247;&#x3002;" class="anchor-navigation-ex-anchor" href="#vector-tile-&#x6574;&#x4E2A;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x628A;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x79F0;&#x4F5C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x6805;&#x683C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x6805;&#x683C;&#x74E6;&#x7247;&#x653E;&#x5927;&#x3001;&#x7F29;&#x5C0F;&#x4F1A;&#x53D8;&#x5F62;&#x5931;&#x771F;&#xFF0C;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#x53EF;&#x4EE5;&#x65E0;&#x9650;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x800C;&#x4E0D;&#x5931;&#x771F;&#x3002;&#x6709;&#x4ED4;&#x7EC6;&#x770B;&#x8FC7;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x7684;&#x4EBA;&#x5C31;&#x77E5;&#x9053;&#x5728;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x62D6;&#x52A8;&#x5730;&#x56FE;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x770B;&#x5230;&#x4E0D;&#x505C;&#x5730;&#x5728;&#x6539;&#x5584;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD4;&#x56DE;&#x5728;&#x5C31;&#x662F;&#x4E00;&#x5F20;&#x5F20;png&#x7684;&#x56FE;&#x7247;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>vector tile &#x6574;&#x4E2A;&#x5730;&#x56FE;&#x5C31;&#x662F;&#x628A;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#x7684;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x56FE;&#x7247;&#x79F0;&#x4F5C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x6805;&#x683C;&#x74E6;&#x7247;&#xFF0C;&#x6709;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x6805;&#x683C;&#x74E6;&#x7247;&#x653E;&#x5927;&#x3001;&#x7F29;&#x5C0F;&#x4F1A;&#x53D8;&#x5F62;&#x5931;&#x771F;&#xFF0C;&#x77E2;&#x91CF;&#x74E6;&#x7247;&#x53EF;&#x4EE5;&#x65E0;&#x9650;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x800C;&#x4E0D;&#x5931;&#x771F;&#x3002;&#x6709;&#x4ED4;&#x7EC6;&#x770B;&#x8FC7;&#x767E;&#x5EA6;&#x5730;&#x56FE;&#x7684;&#x4EBA;&#x5C31;&#x77E5;&#x9053;&#x5728;&#x653E;&#x5927;&#x7F29;&#x5C0F;&#x62D6;&#x52A8;&#x5730;&#x56FE;&#x7684;&#x65F6;&#x5019;&#x80FD;&#x770B;&#x5230;&#x4E0D;&#x505C;&#x5730;&#x5728;&#x6539;&#x5584;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD4;&#x56DE;&#x5728;&#x5C31;&#x662F;&#x4E00;&#x5F20;&#x5F20;PNG&#x7684;&#x56FE;&#x7247;&#x3002;</h5>
+</li>
+<li><h5 id="geometrie-&#x5730;&#x56FE;&#x4E0A;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x90FD;&#x662F;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x3002;"><a name="geometrie-&#x5730;&#x56FE;&#x4E0A;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x90FD;&#x662F;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x3002;" class="anchor-navigation-ex-anchor" href="#geometrie-&#x5730;&#x56FE;&#x4E0A;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x90FD;&#x662F;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>geometrie &#x5730;&#x56FE;&#x4E0A;&#x4E0D;&#x540C;&#x533A;&#x57DF;&#x90FD;&#x662F;&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#x3002;</h5>
+</li>
+<li><h5 id="geojson-&#x628A;&#x63CF;&#x8FF0;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7279;&#x5F81;&#x5305;&#x62EC;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9AD8;&#x5EA6;&#x7B49;&#x5404;&#x79CD;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;"><a name="geojson-&#x628A;&#x63CF;&#x8FF0;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7279;&#x5F81;&#x5305;&#x62EC;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9AD8;&#x5EA6;&#x7B49;&#x5404;&#x79CD;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;" class="anchor-navigation-ex-anchor" href="#geojson-&#x628A;&#x63CF;&#x8FF0;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7279;&#x5F81;&#x5305;&#x62EC;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9AD8;&#x5EA6;&#x7B49;&#x5404;&#x79CD;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>GeoJSON &#x628A;&#x63CF;&#x8FF0;&#x4E0D;&#x540C;&#x7279;&#x5F81;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x7279;&#x5F81;&#x5305;&#x62EC;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x3001;&#x989C;&#x8272;&#x3001;&#x9AD8;&#x5EA6;&#x7B49;&#x5404;&#x79CD;&#x7279;&#x5F81;&#x4FE1;&#x606F;&#x3002;</h5>
+</li>
+</ul>
+<h3 id="&#x82F1;&#x8BED;&#x5B66;&#x4E60;&#x4E13;&#x533A;"><a name="&#x82F1;&#x8BED;&#x5B66;&#x4E60;&#x4E13;&#x533A;" class="anchor-navigation-ex-anchor" href="#&#x82F1;&#x8BED;&#x5B66;&#x4E60;&#x4E13;&#x533A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x82F1;&#x8BED;&#x5B66;&#x4E60;&#x4E13;&#x533A;</h3>
+<h4 id="feature"><a name="feature" class="anchor-navigation-ex-anchor" href="#feature"><i class="fa fa-link" aria-hidden="true"></i></a>feature</h4>
+<h5 id="&#x82F1;-fi&#x2D0;t&#x283;&#x259;--&#x7F8E;-fit&#x283;&#x25A;"><a name="&#x82F1;-fi&#x2D0;t&#x283;&#x259;--&#x7F8E;-fit&#x283;&#x25A;" class="anchor-navigation-ex-anchor" href="#&#x82F1;-fi&#x2D0;t&#x283;&#x259;--&#x7F8E;-fit&#x283;&#x25A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x82F1; [&apos;fi&#x2D0;t&#x283;&#x259;]  &#x7F8E; [&apos;fit&#x283;&#x25A;]</h5>
+<h6 id="n-&#x7279;&#x8272;&#xFF0C;&#x7279;&#x5F81;&#xFF1B;&#x5BB9;&#x8C8C;&#xFF1B;&#x7279;&#x5199;&#x6216;&#x4E13;&#x9898;&#x8282;&#x76EE;"><a name="n-&#x7279;&#x8272;&#xFF0C;&#x7279;&#x5F81;&#xFF1B;&#x5BB9;&#x8C8C;&#xFF1B;&#x7279;&#x5199;&#x6216;&#x4E13;&#x9898;&#x8282;&#x76EE;" class="anchor-navigation-ex-anchor" href="#n-&#x7279;&#x8272;&#xFF0C;&#x7279;&#x5F81;&#xFF1B;&#x5BB9;&#x8C8C;&#xFF1B;&#x7279;&#x5199;&#x6216;&#x4E13;&#x9898;&#x8282;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>n. &#x7279;&#x8272;&#xFF0C;&#x7279;&#x5F81;&#xFF1B;&#x5BB9;&#x8C8C;&#xFF1B;&#x7279;&#x5199;&#x6216;&#x4E13;&#x9898;&#x8282;&#x76EE;</h6>
+<h6 id="vi-&#x8D77;&#x91CD;&#x8981;&#x4F5C;&#x7528;"><a name="vi-&#x8D77;&#x91CD;&#x8981;&#x4F5C;&#x7528;" class="anchor-navigation-ex-anchor" href="#vi-&#x8D77;&#x91CD;&#x8981;&#x4F5C;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>vi. &#x8D77;&#x91CD;&#x8981;&#x4F5C;&#x7528;</h6>
+<h6 id="vt-&#x7279;&#x5199;&#xFF1B;&#x4EE5;&#x4E3A;&#x7279;&#x8272;&#xFF1B;&#x7531;&#x4E3B;&#x6F14;"><a name="vt-&#x7279;&#x5199;&#xFF1B;&#x4EE5;&#x4E3A;&#x7279;&#x8272;&#xFF1B;&#x7531;&#x4E3B;&#x6F14;" class="anchor-navigation-ex-anchor" href="#vt-&#x7279;&#x5199;&#xFF1B;&#x4EE5;&#x4E3A;&#x7279;&#x8272;&#xFF1B;&#x7531;&#x4E3B;&#x6F14;"><i class="fa fa-link" aria-hidden="true"></i></a>vt. &#x7279;&#x5199;&#xFF1B;&#x4EE5;&#x2026;&#x4E3A;&#x7279;&#x8272;&#xFF1B;&#x7531;&#x2026;&#x4E3B;&#x6F14;</h6>
+<h4 id="layers"><a name="layers" class="anchor-navigation-ex-anchor" href="#layers"><i class="fa fa-link" aria-hidden="true"></i></a>layers</h4>
+<h5 id="&#x82F1;-le&#x26A;&#x259;z--&#x7F8E;-le&#x26A;rz"><a name="&#x82F1;-le&#x26A;&#x259;z--&#x7F8E;-le&#x26A;rz" class="anchor-navigation-ex-anchor" href="#&#x82F1;-le&#x26A;&#x259;z--&#x7F8E;-le&#x26A;rz"><i class="fa fa-link" aria-hidden="true"></i></a>&#x82F1; [&apos;le&#x26A;&#x259;z]  &#x7F8E; [&apos;le&#x26A;rz]</h5>
+<h6 id="n-&#x56FE;&#x5C42;&#x9762;&#x677F;&#xFF0C;&#x56FE;&#x5C42;&#x96C6;&#x5408;&#xFF08;layer&#x590D;&#x6570;&#x5F62;&#x5F0F;&#xFF09;&#xFF1B;&#x5C42;&#x9762;&#x677F;"><a name="n-&#x56FE;&#x5C42;&#x9762;&#x677F;&#xFF0C;&#x56FE;&#x5C42;&#x96C6;&#x5408;&#xFF08;layer&#x590D;&#x6570;&#x5F62;&#x5F0F;&#xFF09;&#xFF1B;&#x5C42;&#x9762;&#x677F;" class="anchor-navigation-ex-anchor" href="#n-&#x56FE;&#x5C42;&#x9762;&#x677F;&#xFF0C;&#x56FE;&#x5C42;&#x96C6;&#x5408;&#xFF08;layer&#x590D;&#x6570;&#x5F62;&#x5F0F;&#xFF09;&#xFF1B;&#x5C42;&#x9762;&#x677F;"><i class="fa fa-link" aria-hidden="true"></i></a>n. &#x56FE;&#x5C42;&#x9762;&#x677F;&#xFF0C;&#x56FE;&#x5C42;&#x96C6;&#x5408;&#xFF08;layer&#x590D;&#x6570;&#x5F62;&#x5F0F;&#xFF09;&#xFF1B;&#x5C42;&#x9762;&#x677F;</h6>
+<h4 id="geometries"><a name="geometries" class="anchor-navigation-ex-anchor" href="#geometries"><i class="fa fa-link" aria-hidden="true"></i></a>geometries</h4>
+<h6 id="n-&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#xFF0C;&#x51E0;&#x4F55;&#x4F53;&#xFF1B;&#x51E0;&#x4F55;&#x5C3A;&#x5BF8;&#xFF08;geometry&#x7684;&#x590D;&#x6570;&#xFF09;"><a name="n-&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#xFF0C;&#x51E0;&#x4F55;&#x4F53;&#xFF1B;&#x51E0;&#x4F55;&#x5C3A;&#x5BF8;&#xFF08;geometry&#x7684;&#x590D;&#x6570;&#xFF09;" class="anchor-navigation-ex-anchor" href="#n-&#x51E0;&#x4F55;&#x56FE;&#x5F62;&#xFF0C;&#x51E0;&#x4F55;&#x4F53;&#xFF1B;&#x51E0;&#x4F55;&#x5C3A;&#x5BF8;&#xFF08;geometry&#x7684;&#x590D;&#x6570;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>n. &#x51E0;&#x4F55;&#x56FE;&#x5F62;&#xFF0C;&#x51E0;&#x4F55;&#x4F53;&#xFF1B;&#x51E0;&#x4F55;&#x5C3A;&#x5BF8;&#xFF08;geometry&#x7684;&#x590D;&#x6570;&#xFF09;</h6>
+<h4 id="vector"><a name="vector" class="anchor-navigation-ex-anchor" href="#vector"><i class="fa fa-link" aria-hidden="true"></i></a>vector</h4>
+<h5 id="&#x82F1;-vekt&#x259;--&#x7F8E;-v&#x25B;kt&#x25A;"><a name="&#x82F1;-vekt&#x259;--&#x7F8E;-v&#x25B;kt&#x25A;" class="anchor-navigation-ex-anchor" href="#&#x82F1;-vekt&#x259;--&#x7F8E;-v&#x25B;kt&#x25A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x82F1; [&apos;vekt&#x259;]  &#x7F8E; [&apos;v&#x25B;kt&#x25A;]</h5>
+<h6 id="n-&#x77E2;&#x91CF;&#xFF1B;&#x5E26;&#x83CC;&#x8005;&#xFF1B;&#x822A;&#x7EBF;"><a name="n-&#x77E2;&#x91CF;&#xFF1B;&#x5E26;&#x83CC;&#x8005;&#xFF1B;&#x822A;&#x7EBF;" class="anchor-navigation-ex-anchor" href="#n-&#x77E2;&#x91CF;&#xFF1B;&#x5E26;&#x83CC;&#x8005;&#xFF1B;&#x822A;&#x7EBF;"><i class="fa fa-link" aria-hidden="true"></i></a>n. &#x77E2;&#x91CF;&#xFF1B;&#x5E26;&#x83CC;&#x8005;&#xFF1B;&#x822A;&#x7EBF;</h6>
+<h6 id="vt-&#x7528;&#x65E0;&#x7EBF;&#x7535;&#x5BFC;&#x822A;"><a name="vt-&#x7528;&#x65E0;&#x7EBF;&#x7535;&#x5BFC;&#x822A;" class="anchor-navigation-ex-anchor" href="#vt-&#x7528;&#x65E0;&#x7EBF;&#x7535;&#x5BFC;&#x822A;"><i class="fa fa-link" aria-hidden="true"></i></a>vt. &#x7528;&#x65E0;&#x7EBF;&#x7535;&#x5BFC;&#x822A;</h6>
+<h4 id="tile"><a name="tile" class="anchor-navigation-ex-anchor" href="#tile"><i class="fa fa-link" aria-hidden="true"></i></a>tile</h4>
+<h5 id="&#x82F1;-ta&#x26A;l--&#x7F8E;-ta&#x26A;l"><a name="&#x82F1;-ta&#x26A;l--&#x7F8E;-ta&#x26A;l" class="anchor-navigation-ex-anchor" href="#&#x82F1;-ta&#x26A;l--&#x7F8E;-ta&#x26A;l"><i class="fa fa-link" aria-hidden="true"></i></a>&#x82F1; [ta&#x26A;l]  &#x7F8E; [ta&#x26A;l]</h5>
+<h6 id="n-&#x74F7;&#x7816;&#xFF0C;&#x74E6;&#x7247;"><a name="n-&#x74F7;&#x7816;&#xFF0C;&#x74E6;&#x7247;" class="anchor-navigation-ex-anchor" href="#n-&#x74F7;&#x7816;&#xFF0C;&#x74E6;&#x7247;"><i class="fa fa-link" aria-hidden="true"></i></a>n. &#x74F7;&#x7816;&#xFF0C;&#x74E6;&#x7247;</h6>
+<h6 id="vt-&#x94FA;&#x4EE5;&#x74E6;&#xFF1B;&#x94FA;&#x4EE5;&#x74F7;&#x7816;"><a name="vt-&#x94FA;&#x4EE5;&#x74E6;&#xFF1B;&#x94FA;&#x4EE5;&#x74F7;&#x7816;" class="anchor-navigation-ex-anchor" href="#vt-&#x94FA;&#x4EE5;&#x74E6;&#xFF1B;&#x94FA;&#x4EE5;&#x74F7;&#x7816;"><i class="fa fa-link" aria-hidden="true"></i></a>vt. &#x94FA;&#x4EE5;&#x74E6;&#xFF1B;&#x94FA;&#x4EE5;&#x74F7;&#x7816;</h6>
+<h6 id="n-tile&#x4EBA;&#x540D;&#xFF1B;&#x4FC4;&#x3001;&#x585E;&#x3001;&#x8428;&#x6469;&#x8482;&#x52D2;"><a name="n-tile&#x4EBA;&#x540D;&#xFF1B;&#x4FC4;&#x3001;&#x585E;&#x3001;&#x8428;&#x6469;&#x8482;&#x52D2;" class="anchor-navigation-ex-anchor" href="#n-tile&#x4EBA;&#x540D;&#xFF1B;&#x4FC4;&#x3001;&#x585E;&#x3001;&#x8428;&#x6469;&#x8482;&#x52D2;"><i class="fa fa-link" aria-hidden="true"></i></a>n. (Tile)&#x4EBA;&#x540D;&#xFF1B;(&#x4FC4;&#x3001;&#x585E;&#x3001;&#x8428;&#x6469;)&#x8482;&#x52D2;</h6>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; books.mcloudhub.com BLUELIFE 2018 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
+2018-11-11 03:28:32
+</span></footer>
                                 
                                 </section>
                             
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
                         </div>
                     </div>
                 
             </div>
 
             
-                
-                
-                <a href="chapter/install/readme.html" class="navigation navigation-next navigation-unique" aria-label="Next page: install">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-                
-            
+
         
     </div>
 
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MapBox 简介","level":"1.1","depth":1,"next":{"title":"install","level":"1.2","depth":1,"path":"chapter/install/readme.md","ref":"chapter/install/readme.md","articles":[{"title":"option","level":"1.2.1","depth":2,"path":"chapter/map/option.md","ref":"chapter/map/option.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","splitter","image-captions","toggle-chapters","sectionx","expandable-chapters-small"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"thebulelife@163.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"chapter/install/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: ../../images/mapbox_login.png","alt":"../../images/mapbox_login.png","nro":1,"url":"../../images/mapbox_login.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../images/mapbox_login.png","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chapter/install/index.html#fig1.2.2","level":"1.2","list_caption":"Figure: ../../images/conter_console.png","alt":"../../images/conter_console.png","nro":2,"url":"../../images/conter_console.png","index":2,"caption_template":"Figure: _CAPTION_","label":"../../images/conter_console.png","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chapter/install/index.html#fig1.2.3","level":"1.2","list_caption":"Figure: ../../images/MapBox_install_webJs.png","alt":"../../images/MapBox_install_webJs.png","nro":3,"url":"../../images/MapBox_install_webJs.png","index":3,"caption_template":"Figure: _CAPTION_","label":"../../images/MapBox_install_webJs.png","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chapter/map/map.html#fig1.3.1","level":"1.3","list_caption":"Figure: ../../images/on_click.png","alt":"../../images/on_click.png","nro":4,"url":"../../images/on_click.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../images/on_click.png","attributes":{},"skip":false,"key":"1.3.1"}]},"title":"Android开发学习","gitbook":"*","description":"Android开发学习"},"file":{"path":"README.md","mtime":"2018-11-09T01:25:02.026Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-09T10:15:49.155Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MapBox 简介","level":"1.1","depth":1,"next":{"title":"install","level":"1.2","depth":1,"path":"chapter/install/readme.md","ref":"chapter/install/readme.md","articles":[{"title":"option","level":"1.2.1","depth":2,"path":"chapter/map/option.md","ref":"chapter/map/option.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-search","search-pro","splitter","image-captions","toggle-chapters","sectionx","expandable-chapters-small","disqus","github","github-buttons","emphasize","-sharing","tbfed-pagefooter","theme-api","anchor-navigation-ex"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy books.mcloudhub.com BLUELIFE 2018","modify_label":"修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"mode":"float","github":{"url":"https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book"},"pageTop":{"showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"showLevel":true,"splitter":{},"search-pro":{"cutWordLib":"nodejieba","defineWord":["Gitbook Use"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"showGoTop":true,"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"theme-api":{"languages":[],"split":true,"theme":"dark"},"printLog":true,"github-buttons":{"repo":"https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book","types":["star","watch","fork"],"size":"small"},"expandable-chapters-small":{},"multipleH1":true,"associatedWithSummary":true,"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":true,"instapaper":true,"vk":true,"all":["facebook","google","twitter","weibo","instapaper"]},"float":{"floatIcon":"fa fa-navicon","showLevelIcon":true,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{},"image-captions":{"variable_name":"_pictures"}},"theme":"default","author":"thebulelife@163.com","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"chapter/install/index.html#fig1.2.1","level":"1.2","list_caption":"Figure: ../../images/mapbox_login.png","alt":"../../images/mapbox_login.png","nro":1,"url":"../../images/mapbox_login.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../images/mapbox_login.png","attributes":{},"skip":false,"key":"1.2.1"},{"backlink":"chapter/install/index.html#fig1.2.2","level":"1.2","list_caption":"Figure: ../../images/conter_console.png","alt":"../../images/conter_console.png","nro":2,"url":"../../images/conter_console.png","index":2,"caption_template":"Figure: _CAPTION_","label":"../../images/conter_console.png","attributes":{},"skip":false,"key":"1.2.2"},{"backlink":"chapter/install/index.html#fig1.2.3","level":"1.2","list_caption":"Figure: ../../images/MapBox_install_webJs.png","alt":"../../images/MapBox_install_webJs.png","nro":3,"url":"../../images/MapBox_install_webJs.png","index":3,"caption_template":"Figure: _CAPTION_","label":"../../images/MapBox_install_webJs.png","attributes":{},"skip":false,"key":"1.2.3"},{"backlink":"chapter/map/map.html#fig1.3.1","level":"1.3","list_caption":"Figure: ../../images/on_click.png","alt":"../../images/on_click.png","nro":4,"url":"../../images/on_click.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../images/on_click.png","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"chapter/user_interface/popup/index.html#fig1.4.1.1","level":"1.4.1","list_caption":"Figure: ../../../images/mapbox_popup.png","alt":"../../../images/mapbox_popup.png","nro":5,"url":"../../../images/mapbox_popup.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../../images/mapbox_popup.png","attributes":{},"skip":false,"key":"1.4.1.1"},{"backlink":"chapter/user_interface/marker/index.html#fig1.4.2.1","level":"1.4.2","list_caption":"Figure: ../../../images/mapbox_marker.png","alt":"../../../images/mapbox_marker.png","nro":6,"url":"../../../images/mapbox_marker.png","index":1,"caption_template":"Figure: _CAPTION_","label":"../../../images/mapbox_marker.png","attributes":{},"skip":false,"key":"1.4.2.1"}]},"title":"MapBox开发学习","language":"zh-hans","gitbook":"*","description":"MapBox开发学习"},"file":{"path":"README.md","mtime":"2018-11-10T19:28:32.898Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-10T22:07:00.915Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -431,6 +590,14 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
@@ -453,6 +620,22 @@
         
     
         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
         <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
         
     
@@ -461,11 +644,11 @@
         
     
         
-        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
         
     
 

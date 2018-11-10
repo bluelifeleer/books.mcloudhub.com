@@ -1,12 +1,69 @@
 {
     "root": "./",
-    "title": "Android开发学习",
-    "description": "Android开发学习",
+    "title": "MapBox开发学习",
+    "description": "MapBox开发学习",
     "author": "thebulelife@163.com",
-    "plugins": ["-search", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small"],
+    "plugins": ["-search", "search-pro", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small", "disqus", "github", "github-buttons", "emphasize", "-sharing", "tbfed-pagefooter", "theme-api", "anchor-navigation-ex"],
+    "language" : "zh-hans",
     "pluginsConfig": {
         "sectionx": {
             "tag": "b"
+        },
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
+        "search-pro": {
+            "cutWordLib": "nodejieba",
+            "defineWord" : ["Gitbook Use"]
+        },
+        "github": {
+            "url": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book"
+        },
+
+        "github-buttons": {
+            "repo": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+        "sharing": {
+            "weibo": true,
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "instapaper": true,
+            "vk": true,
+            "all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy books.mcloudhub.com BLUELIFE 2018",
+            "modify_label": "修改时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "theme-api": {
+            "theme": "dark"
+        },
+        "showLevel": true,
+        "associatedWithSummary": true,
+        "printLog": true,
+        "multipleH1": true,
+        "mode": "float",
+        "showGoTop":true,
+        "float": {
+            "floatIcon": "fa fa-navicon",
+            "showLevelIcon": true,
+            "level1Icon": "fa fa-hand-o-right",
+            "level2Icon": "fa fa-hand-o-right",
+            "level3Icon": "fa fa-hand-o-right"
+        },
+        "pageTop": {
+            "showLevelIcon": true,
+            "level1Icon": "fa fa-hand-o-right",
+            "level2Icon": "fa fa-hand-o-right",
+            "level3Icon": "fa fa-hand-o-right"
         }
     }
 }
