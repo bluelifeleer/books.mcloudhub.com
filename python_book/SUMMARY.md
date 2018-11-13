@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
 * [Python基础学习](python/README.md)
 * [Python语法](python/lang/RADME.md)
 	* [内置函数](python/lang/built_in_Functions/README.md)
