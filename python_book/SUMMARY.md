@@ -1,8 +1,11 @@
 # Summary
 
+<<<<<<< HEAD
 * [Python介绍](README.md)
 * [Python安装](python/install/README.md)
 * [Python各个版本区别](python/difference/README.md)
+=======
+>>>>>>> 5c5a170de248e72906a16d73f96253a60f602415
 * [Python基础学习](python/README.md)
 * [Python语法](python/lang/RADME.md)
 	* [内置函数](python/lang/built_in_Functions/README.md)
