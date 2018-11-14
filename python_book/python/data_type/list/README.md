@@ -73,4 +73,22 @@ print(x)
 #  [['a', 'b', 'c'], [1, 2, 3]]
 ```
 
+#### extend()方法用于向列表末尾一次性追回另一个序列中的多个值。
+
+#### index()方法用于从列表中找出某个值第一个匹配的索引位置。
+
+#### insert()方法将对象插入列表中。
+
+#### pop()方法用于移除列表中的一个元素（默认最后一个元素），并返回该元素的值。
+
+#### remove()方法用于移除列表中某一个佶的匹配项。
+
+#### reverse()方法用于反转一个列表中的元素。
+
+#### sort()方法用于对原列表进行排序。
+
+#### clear()方法用于清空列表。
+
+#### copy()方法用于复制列表。
+
 [参考连接：https://docs.python.org/3.5/tutorial/datastructures.html?highlight=dictionary#more-on-lists](https://docs.python.org/3.5/tutorial/datastructures.html?highlight=dictionary#more-on-lists 'https://docs.python.org/3.5/tutorial/datastructures.html?highlight=dictionary#more-on-lists')

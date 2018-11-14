@@ -17,6 +17,8 @@
     * [WIFI设备](android/wifidevices/README.md)
     * [快速记录](android/quickly/record.md)
     * [日志工具](android/log/README.md)
+    * [Socket数据通信](android/socket/README.md)
+    * [本地存储](android/localStrorge/README.md)
 * [SVG](svg/README.md)
     * [形状](svg/shape/README.md)
         * [矩形](svg/shape/rect.md)
