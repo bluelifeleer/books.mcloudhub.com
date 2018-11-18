@@ -3,7 +3,7 @@
 	"title": "Python开发学习",
 	"description": "Python开发学习",
 	"author": "thebulelife@163.com",
-	"plugins": ["-search", "search-pro", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small", "disqus", "github", "github-buttons", "emphasize", "-sharing", "tbfed-pagefooter", "theme-api", "anchor-navigation-ex"],
+	"plugins": ["-search", "search-pro", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small", "disqus", "github", "github-buttons", "emphasize", "-sharing", "tbfed-pagefooter", "theme-api", "anchor-navigation-ex","api-language-selector"],
 	"language": "zh-hans",
 	"pluginsConfig": {
 		"sectionx": {
@@ -64,6 +64,9 @@
 			"level1Icon": "fa fa-hand-o-right",
 			"level2Icon": "fa fa-hand-o-right",
 			"level3Icon": "fa fa-hand-o-right"
-		}
+		},
+		"api-language-selector": {
+	      "theme": "dark"
+	    }
 	}
 }

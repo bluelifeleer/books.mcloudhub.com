@@ -75,7 +75,7 @@ collections.find_one()
 
 > 返回通过```insert_many()```插入的所有文档id
 
-### db.profiles.create_index([],unique=True)
+### db.collection.create_index([],unique=True)
 
 > 给文档添加一个索引，unique=True是否唯一。
 
