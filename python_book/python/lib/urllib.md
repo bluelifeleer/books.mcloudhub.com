@@ -15,6 +15,40 @@ import urllib.request
 urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)
 ```
 
+#### request方法
+
+* ##### request.OpenerDirector
+* ##### request.BaseHandler
+* ##### request.HTTPDefaultErrorHandler
+* ##### request.HTTPRedirectHandler
+* ##### request.HTTPCookieProcessor(cookiejar=None)
+* ##### request.ProxyHandler(proxies=None)
+* ##### request.HTTPPasswordMgr
+* ##### request.HTTPPasswordMgrWithDefaultRealm
+* ##### request.HTTPPasswordMgrWithPriorAuth
+* ##### request.AbstractBasicAuthHandler(password_mgr=None)
+* ##### request.HTTPBasicAuthHandler(password_mgr=None)
+* ##### request.ProxyBasicAuthHandler(password_mgr=None)
+* ##### request.AbstractDigestAuthHandler(password_mgr=None)
+* ##### request.HTTPDigestAuthHandler(password_mgr=None)
+* ##### request.ProxyDigestAuthHandler(password_mgr=None)
+* ##### request.HTTPHandler
+* ##### request.HTTPSHandler(debuglevel=0, context=None, check_hostname=None)
+* ##### request.FileHandler
+* ##### request.DataHandler
+* ##### request.FTPHandler
+* ##### request.CacheFTPHandler
+* ##### request.UnknownHandler
+* ##### request.HTTPErrorProcessor
+
+#### respons方法
+
+* ##### respons.getHeaders()  获取请求头信息
+* ##### respons.read()	获取返回的内容
+* ##### respons.read().decode('utf-8')	返回的内容解析为```utf-8```编码
+* ##### respons.getHeader('key')	获取一个指定的信息
+* ##### respons.status 	获取请求状态码
+
 #### 实例：
 
 ```

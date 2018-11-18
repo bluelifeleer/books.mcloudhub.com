@@ -6,6 +6,7 @@
 * [Python基础学习](python/README.md)
 * [Python语法](python/lang/RADME.md)
 	* [内置函数](python/lang/built_in_Functions/README.md)
+	* [pprint模块](python/lang/built_in_Functions/pprint.md)
 	* [变量](python/lang/variable/readme.md)
 	* [常量](python/lang/constant/readme.md)
 	* [关键字](python/lang/keyword/readme.md)
@@ -24,7 +25,7 @@
 * [Python正则](python/reg/reg.md)
 * [Python函数](python/func/func.md)
 * [Python文件操作](python/file/README.md)
-* [Python类](python/class/class.md)
+* [Python面向对象编程](python/class/class.md)
 * [Python socket](python/socket/readme.md)
 * [Python 异常类](python/exceptions/readme.md)
 * [Python线程](python/thread/readme.md)
@@ -35,5 +36,6 @@
 	* [requests](python/lib/requests.md)
 	* [mysql-python](python/lib/mysql-python.md)
 	* [pymysql](python/lib/pymysql.md)
+	* [pymongo](python/lib/pymongo.md)
 * [附录](python/appendix/README.md)
 
