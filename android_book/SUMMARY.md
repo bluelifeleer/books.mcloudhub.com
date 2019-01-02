@@ -13,6 +13,8 @@
         * [复选按纽控件](android/uiview/checkBox.md)
         * [单选按纽控件](android/uiview/radio.md)
         * [webView控件](android/uiview/webView.md)
+        * [图片控件](android/uiview/imgui.md)
+        * [提示控件](android/uiview/toast.md)
     * [蓝牙设备](android/bluetooth/README.md)
     * [WIFI设备](android/wifidevices/README.md)
     * [快速记录](android/quickly/record.md)
