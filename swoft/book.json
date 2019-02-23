@@ -17,11 +17,11 @@
 			"defineWord": ["Gitbook Use"]
 		},
 		"github": {
-			"url": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book"
+			"url": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/swoft"
 		},
 
 		"github-buttons": {
-			"repo": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/mapBox_book",
+			"repo": "https://github.com/bluelifeleer/books.mcloudhub.com/tree/master/swoft",
 			"types": [
 				"star",
 				"watch",
