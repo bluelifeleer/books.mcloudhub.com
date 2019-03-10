@@ -18,6 +18,7 @@
 	* [Tuple 元组](python/data_type/tuple/README.md)
 	* [Sets 集合](python/data_type/sets/README.md)
 	* [Dictionary 字典](python/data_type/dictionary/README.md)
+* [Python中文编码](python/codeing/README.md)
 * [Python时间和日期](python/date_time/README.md)
 * [Python算术运算符](python/operator/readme.md)
 * [Python循环](python/loop/loop.md)

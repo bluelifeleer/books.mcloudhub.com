@@ -39,7 +39,7 @@
 			"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
 		},
 		"tbfed-pagefooter": {
-			"copyright": "Copyright &copy books.mcloudhub.com Python 2018",
+			"copyright": "Copyright &copy books.mcloudhub.com Swoft Php Swoole 2018",
 			"modify_label": "修改时间：",
 			"modify_format": "YYYY-MM-DD HH:mm:ss"
 		},
