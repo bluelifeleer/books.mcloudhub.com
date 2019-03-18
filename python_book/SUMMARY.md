@@ -34,6 +34,7 @@
 * [python发送邮件的能力](python/mail/readme.md)
 * [Python常用库](python/commonly/libraries.md)
 	* [urllib](python/lib/urllib.md)
+	* [urllib3](python/lib/urllib3.md)
 	* [requests](python/lib/requests.md)
 	* [mysql-python](python/lib/mysql-python.md)
 	* [pymysql](python/lib/pymysql.md)

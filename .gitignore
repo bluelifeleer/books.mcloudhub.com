@@ -1,4 +1,5 @@
 .DS_Store
+_book
 python_book/node_modules
 python_book/_book
 python_book/.DS_Store
