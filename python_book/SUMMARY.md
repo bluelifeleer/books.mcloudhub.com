@@ -26,6 +26,7 @@
 * [Python正则](python/reg/reg.md)
 * [Python函数](python/func/func.md)
 * [Python文件操作](python/file/README.md)
+* [Python序列化与反序列化](python/serialize/README.md)
 * [Python面向对象编程](python/class/class.md)
 * [Python socket](python/socket/readme.md)
 * [Python 异常类](python/exceptions/readme.md)
