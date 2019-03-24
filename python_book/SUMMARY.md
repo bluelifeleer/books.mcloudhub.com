@@ -40,5 +40,7 @@
 	* [mysql-python](python/lib/mysql-python.md)
 	* [pymysql](python/lib/pymysql.md)
 	* [pymongo](python/lib/pymongo.md)
+	* [python可视化matplotlib](python/matplotlib/readme.md)
+	* [Python数据分析库pandas](python/pandas/readme.md)
 * [附录](python/appendix/README.md)
 
