@@ -1,7 +1,7 @@
 {
 	"root": "./",
-	"title": "Python开发学习",
-	"description": "Python开发学习",
+	"title": "Flutter Book",
+	"description": "Flutter Book",
 	"author": "thebulelife@163.com",
 	"plugins": ["-search", "search-pro", "splitter", "image-captions", "toggle-chapters", "sectionx", "expandable-chapters-small", "disqus", "github", "github-buttons", "emphasize", "-sharing", "tbfed-pagefooter", "theme-api", "anchor-navigation-ex"],
 	"language": "zh-hans",

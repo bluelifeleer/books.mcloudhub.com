@@ -49,6 +49,38 @@
 * 2：文档中强调确实是```0~61```，而不是59，闰年秒占两秒。
 * 3：当使用strptime()函数时只有这一年的周数和天数确定时%U和%W才会被计算。
 
+##### 使用datetime获取年、月、日
+
+```
+from datetime import date
+today = date.today()
+today.year // 年
+today.month // 月
+today.day // 日期
+today.weekday() // 星期
+```
+
+#### 使用datetime获取格式化时间
+
+```
+>>> from datetime import datetime
+>>> now = datetime.now()
+>>> now.year
+2019
+>>> now.month
+9
+>>> now.day
+18
+>>> now.hour
+2
+>>> now.minute
+9
+>>> now.second
+6
+>>> now.microsecond
+422358
+```
+
 ##### struct_time 元组
 
 struct_time元组共有9个元素：年、月、日、时、分、秒、一年中第几周、一个中第几天、是否为夏令时。
@@ -87,6 +119,18 @@ print("当前时间戳： %f" %time.time())
 当前时间戳： 1542299280.144668
 ```
 
+#### 使用time模块输出格式化时间
+
+```
+import time
+time.strftime("%y-%m-%d")
+# '19-09-18'
+time.strftime("%d/%m/%y")
+# '18/09/19'
+time.strftime("%y-%m-%d %H:%M:%S")
+# '19-09-18 02:06:12'
+```
+
 ##### localtime()函数
 
 > 格式化时间戳为本地时间，如果secs未传入参数，就以当前时间为标准转换。
@@ -112,7 +156,7 @@ localtime: time.struct_time(tm_year=2018, tm_mon=11, tm_mday=16, tm_hour=0, tm_m
 
 ##### sleep(secs)函数
 
-> 用于推迟调用线程的运行，通过secs指定进程的挂起时间。
+> 用于推迟调用线程的运行，通过secs（秒数）指定进程的挂起时间。
 
 语法：
 
